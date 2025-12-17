@@ -137,3 +137,6 @@ Comments=
 [HistoryLists\hlUnitAliases]
 Count=1
 Item0=WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;
+[HistoryLists\hlSearchPath]
+Count=1
+Item0=D:\PROJECTS_LYR\CHECK_LIST\DESKTOP\Pascal_Delphi\Delphi_7\LIBRARY_D7\BPL\V70
