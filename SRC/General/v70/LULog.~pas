@@ -79,8 +79,6 @@ type
 var
     APPLog: TFileMemoLog;
 
-procedure CreateAPPLog (AOwner: Tcomponent);
-
 function GetLogFileName: string;
 function GetLogFileNameSufix (const Sufix: string): string;
 
@@ -97,11 +95,6 @@ const
     StlsBegin = '>';
     StlsEnd = '<';
     StlsProcess = 'P';
-
-procedure CreateAPPLog (AOwner: Tcomponent);
-begin
-    APPLog := TFileMemoLog.Create(AOwner);
-end;
 
 function GetLogFileName: string;
 begin
