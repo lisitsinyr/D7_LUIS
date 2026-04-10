@@ -378,7 +378,7 @@ procedure TSheduler.CreateNextEvent (Present: TDateTime);
 var
    Year, Month, Day, DayWeek, Hour, Min, Sec, MSec: Word;
    i: Integer;
-   LEvent: TShedulerEvent;
+   Event: TShedulerEvent;
    D, T: TDateTime;
    maxDDWork: Integer;
 begin
@@ -401,10 +401,10 @@ begin
                for Min:=Min to maxNN do begin
                   { Check List Sheduler }
                   for i:=0 to ShedulerEvents.Count-1 do begin
-                     LEvent := TShedulerEvent (ShedulerEvents.Items [i]);
-                     if (LEvent.DD [Day] and LEvent.DW [DayWeek]) and
-                        LEvent.MM [Month] and LEvent.HH [Hour] and LEvent.NN [Min] then begin
-                        FNameEvents.Add (LEvent.NameEvent);
+                     Event := TShedulerEvent (ShedulerEvents.Items [i]);
+                     if (Event.DD [Day] and Event.DW [DayWeek]) and
+                        Event.MM [Month] and Event.HH [Hour] and Event.NN [Min] then begin
+                        FNameEvents.Add (Event.NameEvent);
                      end;
                   end;
                   if FNameEvents.Count > 0 then break;
